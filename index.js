@@ -88,9 +88,7 @@ var finances = [
 ];
 
 // var totalMonths = finances.length;
-// console.log("Total months: " + totalMonths);
-
-//Variable Initialization: to store various financial metrics
+//Variable
 
 let totalMonths = 0;
 let totalProfitLoss = 0;
@@ -100,3 +98,31 @@ let greatestDecrease = { date: '', amount: 0 };
 let totalChange = 0;
 let averageChange = 0;
 
+for (var [date, profitLoss] of finances) {
+    totalMonths++; //increment the total number of months
+    totalProfitLoss += profitLoss; //accumulate total profit/loss
+
+    if (previousProfitLoss !== 0) {
+        // Update total change
+        let change = profitLoss - previousProfitLoss;
+        totalChange += change;
+    
+        // Update greatest increase and decrease
+        if (change > greatestIncrease.amount) {
+          greatestIncrease = { date, amount: change };
+        } else if (change < greatestDecrease.amount) {
+          greatestDecrease = { date, amount: change };
+        }
+      }
+      previousProfitLoss = profitLoss;
+    }
+
+    averageChange = totalChange / (finances.length - 1)//average change
+    averageChange = Math.round(averageChange * 100) / 100; //to get the average change rounded
+
+    console.log("Financial Analysis\n--------------------");
+    console.log(" Total Months: " + totalMonths);
+    console.log(` Total: $${totalProfitLoss}`); //logs the total on console
+    console.log(` Average Change: ${averageChange}`);
+    console.log(` Greatest Increase in Profits/Losses: ${greatestIncrease.date} ($${greatestIncrease.amount})`);
+    console.log(`Greatest Decrease in Profits/Losses: ${greatestDecrease.date} ($${greatestDecrease.amount})`);
