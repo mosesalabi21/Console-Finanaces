@@ -88,8 +88,8 @@ var finances = [
 ];
 
 // var totalMonths = finances.length;
-//Variable
 
+//Variable
 let totalMonths = 0;
 let totalProfitLoss = 0;
 let previousProfitLoss = 0;
@@ -120,10 +120,10 @@ for (var [date, profitLoss] of finances) {
     averageChange = totalChange / (finances.length - 1)//average change
     averageChange = Math.round(averageChange * 100) / 100; //to get the average change rounded
 
+    //logs the total on console
     console.log("Financial Analysis\n--------------------");
-    
     console.log(" Total Months: " + totalMonths);
-    console.log(` Total: $${totalProfitLoss}`); //logs the total on console
+    console.log(` Total: $${totalProfitLoss}`); 
     console.log(` Average Change: ${averageChange}`);
     console.log(` Greatest Increase in Profits/Losses: ${greatestIncrease.date} ($${greatestIncrease.amount})`);
     console.log(`Greatest Decrease in Profits/Losses: ${greatestDecrease.date} ($${greatestDecrease.amount})`);
