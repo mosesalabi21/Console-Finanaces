@@ -121,6 +121,7 @@ for (var [date, profitLoss] of finances) {
     averageChange = Math.round(averageChange * 100) / 100; //to get the average change rounded
 
     console.log("Financial Analysis\n--------------------");
+    
     console.log(" Total Months: " + totalMonths);
     console.log(` Total: $${totalProfitLoss}`); //logs the total on console
     console.log(` Average Change: ${averageChange}`);
