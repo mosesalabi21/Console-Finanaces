@@ -7,7 +7,7 @@ In this project, I have used Java skills, research and resources to create code 
 The primary goal for this project is to have a resulting analysis that looks similar to the following printed to the console:
 
 Financial Analysis 
-----------------
+
 Total Months: 86
 Total: $38382578
 Average Change: -2315.12
