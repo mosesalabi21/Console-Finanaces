@@ -18,3 +18,8 @@ Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 Click link to access webpage
 
 # Screenshots of Repo Page & Web page
+
+<img width="356" alt="Screenshot 2024-01-08 210144" src="https://github.com/mosesalabi21/Console-Finanaces/assets/151676316/2406484a-6d08-4e61-976d-828670a06bce">
+<img width="692" alt="Screenshot 2" src="https://github.com/mosesalabi21/Console-Finanaces/assets/151676316/39bb086d-5710-4649-8b56-899dd62ef07d">
+
+
